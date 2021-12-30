@@ -1,0 +1,24 @@
+package selfProgramming;
+
+public class LargestElement {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		double[] sales = {12.25, 32.50, 16.90, 23.00, 45.68};
+		int index, maxIndex;
+		double largestSale;
+
+		maxIndex = 0;
+
+		for(index = 1; index<sales.length;index++) 
+		   if (sales[maxIndex] < sales[index])
+		       maxIndex = index;
+		largestSale = sales[maxIndex];
+			System.out.println("Largest Scale: " +largestSale);
+		
+		
+
+	}
+
+}
